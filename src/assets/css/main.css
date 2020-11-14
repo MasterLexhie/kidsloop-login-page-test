@@ -1,0 +1,121 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --black-color-10: rgba(0, 0, 0, 10%);
+  --blue-color: #0e78d5;
+  --navy-blue-color: #0c3680;
+}
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  box-sizing: border-box;
+  /* letter-spacing: 1px; */
+}
+
+body {
+  font-size: 14px;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 500px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-h-center {
+  justify-content: center;
+}
+
+.flex-h-bet {
+  justify-content: space-between;
+}
+
+.flex-v-center {
+  align-items: center;
+}
+
+.border-shadow {
+  box-shadow: 0 0 20px 5px var(--black-color-10);
+}
+
+.border-round {
+  border-radius: 12px;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height-screen {
+  height: 100vh;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.btn--blue {
+  background: var(--blue-color);
+  color: var(--white-color);
+  transition: background ease-out .2s;
+}
+
+.btn--blue:hover {
+  transition: background ease-in .2s;
+  background: #053b6a;
+}
+
+
+@media (min-width: 760px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
